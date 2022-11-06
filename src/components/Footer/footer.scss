@@ -1,0 +1,15 @@
+.copyright {
+  text-align: center;
+}
+.links {
+  display: flex;
+  ul {
+    margin: 0 2em;
+  }
+}
+.name {
+  text-align: center;
+  background-image: linear-gradient(to right, #eee, #571f4e 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
