@@ -1,0 +1,23 @@
+.tag-list {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	border-radius: 1em;
+	box-shadow: 0 0.1em 0.25em 0 #eee;
+	z-index: 800;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 1em;
+	flex-direction: column;
+	background-color: #fff;
+	.close {
+		position: absolute;
+		top: 2.5%;
+		left: 5%;
+	}
+	p {
+		font-size: 2em;
+		color: #000;
+	}
+}

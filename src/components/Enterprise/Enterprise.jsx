@@ -121,6 +121,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1 }}
+              className="bg-white"
             >
               Personal work, and hobbiest builds are prioritized with web and
               mobile development ranging from utility tools, E-commerce sites
