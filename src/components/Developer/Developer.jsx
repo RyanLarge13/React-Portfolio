@@ -12,12 +12,15 @@ const Developer = ({ onDevClick, onoroff }) => {
   const [projects, setProjects] = useState([]);
   const [sectionDev, setSectionDev] = useState(onoroff);
   const [tags, setTags] = useState(false);
+  const [singleProject, setSingleProject] = useState([])
 
   useEffect(() => {
-    axios.get("https://react-folio-server.onrender.com/dev/projects").then((res) => {
-      setProjects(res.data.data);
-    });
-  }, [projects]);
+    axios
+      .get("https://react-folio-server.onrender.com/dev/projects")
+      .then((res) => {
+        setProjects(res.data.data);
+      });
+  }, []);
 
   return (
     <>
@@ -66,11 +69,21 @@ const Developer = ({ onDevClick, onoroff }) => {
                     </a>
                     <AiFillTags
                       className="tags"
-                      onClick={() => setTags(true)}
+                      onClick={() => {
+                        setTags(true);
+                        setSingleProject(project);
+                      }}
                     />
                   </div>
                 ))}
-                {tags ? <Tag onCloseClick={(bool) => setTags(bool)} /> : ""}
+                {tags ? (
+                  <Tag
+                    project={singleProject}
+                    onCloseClick={(bool) => setTags(bool)}
+                  />
+                ) : (
+                  ""
+                )}
               </div>
             ) : (
               <>
