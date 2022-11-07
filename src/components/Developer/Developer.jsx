@@ -14,7 +14,7 @@ const Developer = ({ onDevClick, onoroff }) => {
   const [tags, setTags] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/dev/projects").then((res) => {
+    axios.get("https://react-folio-server.onrender.com/dev/projects").then((res) => {
       setProjects(res.data.data);
     });
   }, [projects]);
