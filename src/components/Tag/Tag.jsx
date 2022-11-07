@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { AiFillCloseCircle } from "react-icons/ai";
 import "./tag.scss";
 
-const Tag = ({ project }) => {
+const Tag = (onCloseClick) => {
   return (
     <>
       <motion.div
@@ -10,8 +10,8 @@ const Tag = ({ project }) => {
         whileInView={{ scale: [1.2, 0.9, 1.1, 1] }}
         className="tag-list"
       >
-        <AiFillCloseCircle className="close" />
-        <p>{project}</p>
+        <AiFillCloseCircle className="close" onClick={onCloseClick(false)} />
+        <p>Hi</p>
       </motion.div>
     </>
   );

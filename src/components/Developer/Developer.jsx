@@ -9,15 +9,9 @@ import code from "../../assets/code.jpg";
 import "./developer.scss";
 
 const Developer = ({ onDevClick, onoroff }) => {
-  let tags;
   const [projects, setProjects] = useState([]);
   const [sectionDev, setSectionDev] = useState(onoroff);
-  const [tag, setTag] = useState(false);
-
-  const getTags = (project) => {
-    tags = project;
-    setTag(true);
-  };
+  const [tags, setTags] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:8080/dev/projects").then((res) => {
@@ -72,11 +66,11 @@ const Developer = ({ onDevClick, onoroff }) => {
                     </a>
                     <AiFillTags
                       className="tags"
-                      onClick={() => getTags(project)}
+                      onClick={() => setTags(true)}
                     />
                   </div>
                 ))}
-                {tag ? <Tag tag={tags} /> : ""}
+                {tags ? <Tag onCloseClick={(bool) => setTags(bool)} /> : ""}
               </div>
             ) : (
               <>
