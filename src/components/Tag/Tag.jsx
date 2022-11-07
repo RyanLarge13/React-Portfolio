@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { AiFillCloseCircle } from "react-icons/ai";
 import "./tag.scss";
