@@ -16,7 +16,7 @@ const Developer = ({ onDevClick, onoroff }) => {
 
   useEffect(() => {
     axios
-      .get("https://react-folio-server.onrender.com/dev/projects")
+      .get("https://react-portfolio-server-production-3097.up.railway.app/dev/projects")
       .then((res) => {
         setProjects(res.data.data);
       });

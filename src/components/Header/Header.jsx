@@ -6,7 +6,7 @@ import "./header.scss";
 const dlPdf = async (e) => {
   e.preventDefault();
   await Axios({
-    url: "https://react-folio-server.onrender.com/pdf",
+    url: "https://react-portfolio-server-production-3097.up.railway.app/pdf",
     method: "GET",
     responseType: "blob",
   }).then((res) => {
@@ -19,7 +19,10 @@ const Header = () => {
     <>
       <header>
         <p className="logo">Ryan } /></p>
-        <AiOutlineCloudDownload className="download" onClick={(e) => dlPdf(e)} />
+        <AiOutlineCloudDownload
+          className="download"
+          onClick={(e) => dlPdf(e)}
+        />
       </header>
     </>
   );
