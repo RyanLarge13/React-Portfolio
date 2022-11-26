@@ -46,4 +46,6 @@ label {
   padding: 0 0.5em; }
   .email-me a {
     text-decoration: none;
-    color: #571f4e; }
+    color: #571f4e;
+    background-color: #fff;
+    padding-bottom: 4em; }

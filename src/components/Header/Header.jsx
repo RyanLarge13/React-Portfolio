@@ -21,7 +21,7 @@ const Header = () => {
         <p className="logo">Ryan } /></p>
         <AiOutlineCloudDownload
           className="download"
-          onClick={(e) => dlPdf(e)}
+          onClick={dlPdf}
         />
       </header>
     </>

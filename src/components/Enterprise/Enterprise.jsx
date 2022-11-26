@@ -88,8 +88,12 @@ const Enterprise = ({ onEnterpriseClick }) => {
               requires me to set up a database, and run a fast modular server.
             </motion.p>
             <div className="social">
-              <AiFillTwitterCircle />
-              <BsFacebook />
+              <a href="https://twitter.com/ryan_large13?t=_NZ-7J0bK6XSMcB6_YuVcA&s=09">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="https://m.facebook.com/ryan.large.984?eav=AfYH83adkFpRXg0-y-FiIcOPmv1iA81j18BBgGeBY2P75b291GOosEKXGPi8r20P9-4&paipv=0">
+                <BsFacebook />
+              </a>
             </div>
           </section>
           <h2 className="major-heading">Experience</h2>
@@ -121,14 +125,14 @@ const Enterprise = ({ onEnterpriseClick }) => {
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1 }}
-              className="bg-white"
+              className="bg-white ml"
             >
               Personal work, and hobbiest builds are prioritized with web and
               mobile development ranging from utility tools, E-commerce sites
               for my own businesses and family business, advertisment, software,
               and experimental scripting with bash.
             </motion.p>
-          <Developer onDevClick={(bool) => setSection(bool)} />
+            <Developer onDevClick={(bool) => setSection(bool)} />
           </section>
         </>
       ) : (
