@@ -1,58 +1,58 @@
 .contact {
-  background-color: #fff;
-  padding-top: 1px;
-  margin-top: 2px;
+	background-color: #fff;
+	padding-top: 1px;
+	margin-top: 2px;
 }
 
 h1 {
-  text-align: center;
-  font-size: 3em;
-  color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	font-size: 3em;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  margin: 0 auto;
-  background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	margin: 0 auto;
+	background-color: #fff;
 
-  button {
-    padding: 0.2em 1.5em 0.2em 0.25em;
-    font-size: 1.25em;
-    align-self: start;
-    border: none;
-    outline: none;
-    background-image: linear-gradient(45deg, #fff, #eee);
-    border-radius: 0.25em;
-    box-shadow: 0 0.1em 0.25em 0 #eee;
-    color: #571f4e;
-  }
+	button {
+		padding: 0.2em 0.5em;
+		font-size: 1.25em;
+		align-self: start;
+		border: none;
+		outline: none;
+		background-image: linear-gradient(45deg, #fff, #eee);
+		border-radius: 0.25em;
+		box-shadow: 0 0.1em 0.25em 0 #eee;
+		color: #571f4e;
+	}
 }
 
 input,
 textarea {
-  width: 100%;
-  border-radius: 0.25em;
-  font-size: 1.25em;
-  margin: 1em 0;
-  padding: 1em 0.25em;
-  outline: none;
-  border: none;
-  box-shadow: 0 0.1em 0.25em 0 #eee;
+	width: 100%;
+	border-radius: 0.25em;
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding: 1em 0.25em;
+	outline: none;
+	border: none;
+	box-shadow: 0 0.1em 0.25em 0 #eee;
 }
 
 label {
-  display: none;
+	display: none;
 }
 
 .email-me {
-  margin-top: 4em;
-  padding: 0 0.5em;
-  a {
-    text-decoration: none;
-    color: #571f4e;
-  }
+	margin-top: 4em;
+	padding: 0 0.5em;
+	a {
+		text-decoration: none;
+		color: #571f4e;
+	}
 }

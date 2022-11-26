@@ -5,21 +5,19 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <p className="copyright">Copyright © {date} All Right Reserved </p>
+        <p className="copyright">Copyright ©{date} <br/>All Right Reserved </p>
       </div>
       <div className="links">
         <ul>
           <li>Contact</li>
           <li>About</li>
           <li>Services</li>
-        </ul>
-        <ul>
           <li>Social</li>
           <li>Email</li>
           <li>Tel</li>
         </ul>
       </div>
-      <p className="name" >Ryan Large</p>
+      <p className="name">Ryan Large</p>
     </>
   );
 };

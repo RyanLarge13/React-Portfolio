@@ -1,0 +1,21 @@
+.copyright {
+  text-align: center; }
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2em 3em; }
+    .links ul li {
+      list-style-type: none;
+      margin-left: -1em;
+      text-align: center; }
+
+.name {
+  text-align: center;
+  background-image: linear-gradient(to right, #eee, #571f4e 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
