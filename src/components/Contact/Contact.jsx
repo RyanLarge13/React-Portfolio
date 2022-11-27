@@ -13,13 +13,14 @@ const Contact = () => {
       email: email,
       message: message,
     };
-    await fetch(
-      "https://react-portfolio-server-production-3097.up.railway.app/mailme/ryanlarge",
-      {
-        method: "POST",
-        body: JSON.stringify(data),
-      }
-    )
+    await fetch("https://react-portfolio-server-production-3097.up.railway.app/mailme/ryanlarge", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
       .then((res) => res.json())
       .then((url) => {
         console.log(url);
