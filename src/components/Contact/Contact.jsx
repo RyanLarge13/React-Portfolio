@@ -8,7 +8,31 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [invalidName, setInvalidName] = useState(false);
+  const [invalidEmail, setInvalidEmail] = useState(false);
+  const [invalidMessage, setInvalidMessage] = useState(false);
   const [sending, setSending] = useState(false);
+
+  const checkName = (e) => {
+    const array = name.split("");
+    const conditions = ["<", ">", ";", "[", "]"];
+    const check = conditions.some((letter) => array.includes(letter));
+    check ? setInvalidName(true) : setInvalidName(false);
+  };
+
+  const checkEmail = (e) => {
+    const array = email.split("");
+    const conditions = ["<", ">", ";", "[", "]"];
+    const check = conditions.some((letter) => array.includes(letter));
+    check ? setInvalidEmail(true) : setInvalidEmail(false);
+  };
+
+  const checkMessage = (e) => {
+    const array = message.split("");
+    const conditions = ["<", ">", ";", "[", "]"];
+    const check = conditions.some((letter) => array.includes(letter));
+    check ? setInvalidMessage(true) : setInvalidMessage(false);
+  };
 
   const notify = () =>
     toast.success(
@@ -25,9 +49,26 @@ const Contact = () => {
       }
     );
 
+  const notifyErr = (message) => {
+    toast.error(`Please ${message} the form before submission.`, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
+
   const handleSubmit = async (e) => {
-    setSending(true);
     e.preventDefault();
+    if (invalidName || invalidEmail || invalidMessage)
+      return notifyErr("correct");
+    if (message === "" || email === "" || name === "")
+      return notifyErr("complete");
+    setSending(true);
     const productionUrl =
       "https://react-portfolio-server-production-3097.up.railway.app";
     const devUrl = "http://localhost:8080";
@@ -74,25 +115,31 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
+            className={invalidName ? "invalid" : "input"}
             type="text"
             id="name"
             name="name"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            onKeyUp={checkName}
           />
           <label htmlFor="email">Email</label>
           <input
+            className={invalidEmail ? "invalid" : "input"}
             type="email"
             name="email"
             id="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onKeyUp={checkEmail}
           />
           <textarea
+            className={invalidMessage ? "invalid" : "input"}
             placeholder="Message"
             onChange={(e) => setMessage(e.target.value)}
+            onKeyUp={checkMessage}
           >
             {message}
           </textarea>
