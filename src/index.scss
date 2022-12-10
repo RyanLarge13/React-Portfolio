@@ -6,3 +6,8 @@
 body {
   padding-top: 50%;
 }
+@media (min-width: 1600px) and (min-height: 800px) {
+  body {
+    padding-top: 10%;
+  }
+}

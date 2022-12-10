@@ -6,6 +6,7 @@
 	border-radius: 0 0 1em 1em;
 	box-shadow: 0 0.1em 0.1em 0 #eee;
 	background-color: #fff;
+
 	p {
 		margin-left: 1em;
 	}
@@ -15,6 +16,10 @@
 	margin-left: 2em;
 	font-size: 3em;
 	color: rgba(0, 0, 0, 0.4);
+
+	@media (min-width: 1600px) and (min-height: 800px) {
+		margin-left: 5%;
+	}
 }
 
 .enterprise {
@@ -28,6 +33,7 @@
 		font-size: 1.25em;
 		left: -5%;
 		z-index: -1;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -37,20 +43,23 @@
 			top: 50%;
 			left: -100%;
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 1px;
-			background: #571f4e ;
+			background: #571f4e;
 			top: 50%;
 			right: -100%;
 		}
+
 		p {
 			padding: 0 0.25em;
 		}
 	}
 }
+
 .me {
 	opacity: 0;
 	scale: 0.5;
@@ -58,17 +67,39 @@
 	top: 15%;
 	right: -35%;
 	border-radius: 0.75em;
+
+	@media (min-width: 1600px) and (min-height: 800px) {
+		top: 5%;
+		right: 5%;
+		scale: 0.75;
+	}
 }
 
 .publications {
 	margin: 25vh 1.7vw 0 1.7vw;
 	text-align: right;
 	color: rgba(0, 0, 0, 0.6);
+
 	p {
 		margin: 1em 0;
 		margin-left: 15vw;
 		line-height: 2em;
 		opacity: 0;
+	}
+
+	@media (min-width: 1600px) and (min-height: 800px) {
+		text-align: left;
+		margin-top: -15vh;
+		margin-bottom: 10vh;
+
+		h3 {
+			margin-left: 5%;
+		}
+
+		p {
+			margin-left: 5%;
+			max-width: 50vw;
+		}
 	}
 }
 
@@ -81,18 +112,30 @@
 		width: 2.25em;
 		color: #571f4e;
 	}
+
+	@media (min-width: 1600px) and (min-height: 800px) {
+		margin-left: 5%;
+
+		p {
+			max-width: 50vw;
+			line-height: 2em;
+		}
+	}
 }
 
 .experience {
 	text-align: right;
 	z-index: 900;
+
 	.ml {
 		margin-left: 15%;
 	}
+
 	.bg-white {
 		background-color: #fff;
 	}
 }
+
 a {
 	color: #571f4e;
 }
