@@ -147,7 +147,7 @@ const Contact = () => {
         </form>
         <div className="email-me">
           <h2>Let's talk..</h2>
-          <a href="mailto:ryanhudsonlarge13@gmail.com">ryanlarge@gmail.com</a>
+          <a href="mailto:ryanlarge@ryanlarge.dev">ryanlarge@ryanlarge.dev</a>
         </div>
       </section>
     </>

@@ -1,0 +1,24 @@
+.blog-post-section {
+	position: fixed;
+	padding: 20% 5% 0 5%;
+	top: 0;
+	max-width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+	z-index: 900;
+	background-color: #fff;
+
+	img {
+		max-width: 90%;
+	}
+
+	.close {
+		margin-bottom: 20vh;
+		margin-left: 70vw;
+		border: none;
+		outline: none;
+		border-radius: 1em;
+		padding: 0.25em 0.5em;
+		box-shadow: 0 0.1em 0.25em #eee;
+	}
+}

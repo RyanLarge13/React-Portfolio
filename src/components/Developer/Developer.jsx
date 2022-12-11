@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { AiFillPlusCircle, AiFillTags } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { DotLoader } from "react-spinners";
+import axios from "axios";
 import Tag from "../Tag/Tag.jsx";
+import Blog from "../Blog/Blog.jsx";
+import BlogPost from "../BlogPost/BlogPost.jsx";
 import githubProfile from "../../assets/githubprofile.jpg";
 import code from "../../assets/code.jpg";
 import "./developer.scss";
@@ -12,14 +14,18 @@ const Developer = ({ onDevClick, onoroff }) => {
   const [projects, setProjects] = useState([]);
   const [sectionDev, setSectionDev] = useState(onoroff);
   const [tags, setTags] = useState(false);
-  const [singleProject, setSingleProject] = useState([])
+  const [singleProject, setSingleProject] = useState([]);
+  const [post, setPost] = useState(false);
 
   useEffect(() => {
     axios
-      .get("https://react-portfolio-server-production-3097.up.railway.app/dev/projects")
+      .get(
+        "https://react-portfolio-server-production-3097.up.railway.app/dev/projects"
+      )
       .then((res) => {
         setProjects(res.data.data);
       });
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -52,7 +58,7 @@ const Developer = ({ onDevClick, onoroff }) => {
             {projects.length > 0 ? (
               <div className="project-grid">
                 {projects.map((project) => (
-                  <div className="project">
+                  <div className="project" key={project._id}>
                     <a href={project.Link} target="_blank" rel="noreferrer">
                       <motion.h2 initial={{ y: 50 }} whileInView={{ y: 0 }}>
                         {project.Title}
@@ -92,6 +98,11 @@ const Developer = ({ onDevClick, onoroff }) => {
               </>
             )}
           </section>
+          {post ? (
+            <BlogPost blogPost={post} removeBlog={(bool) => setPost(bool)} />
+          ) : (
+            <Blog onBlogClick={(singlePost) => setPost(singlePost)} />
+          )}
         </>
       ) : (
         <>
