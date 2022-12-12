@@ -1,5 +1,4 @@
-import "./BlogPost.scss";
-import { AiFillCloseCircle } from "react-icons/ai";
+import "./BlogPost.scss"
 
 const BlogPost = ({ blogPost, removeBlog}) => {
   return (

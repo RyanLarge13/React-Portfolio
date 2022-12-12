@@ -67,7 +67,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 1 }}
+              whileInView={{ opacity: 0.5 }}
             >
               My techstack knowledge began in June 2022 while enrolling in
               CareerFoundry's Fullstack Web Development course. When it comes to
@@ -76,7 +76,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 1 }}
+              whileInView={{ opacity: 0.5 }}
             >
               MongoDB CLI, Atlas, Compass and mongoose have all been implemented
               throughout various projects with advanced logic and queries.
@@ -98,7 +98,6 @@ const Enterprise = ({ onEnterpriseClick }) => {
           </section>
           <h2 className="major-heading">Experience</h2>
           <section className="experience">
-            {" "}
             <motion.h3
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +108,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               className="ml"
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 1 }}
+              whileInView={{ opacity: 0.5 }}
             >
               My professional history and environment consists of E-commerce
               builds for local business, managing databases, and creating
@@ -124,7 +123,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 1 }}
+              whileInView={{ opacity: 0.5 }}
               className="bg-white ml"
             >
               Personal work, and hobbiest builds are prioritized with web and

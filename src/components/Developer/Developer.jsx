@@ -32,7 +32,7 @@ const Developer = ({ onDevClick, onoroff }) => {
     <>
       {sectionDev ? (
         <>
-          <section className="developer">
+          <section className={post ? "developer.open" : "developer"}>
             <div className="title">
               <p>Developer</p>
             </div>

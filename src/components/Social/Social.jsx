@@ -10,7 +10,7 @@ import "./social.scss";
 const Social = () => {
   return (
     <>
-      <h1>Social</h1>
+      <h1 className="social-heading">Social</h1>
       <div className="social-container">
         <a href="https://github.com/RyanLarge13/">
           <BsGithub className="i" />
