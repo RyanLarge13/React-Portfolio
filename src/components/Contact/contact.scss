@@ -3,6 +3,10 @@
 	padding-top: 1px;
 	margin-top: 2px;
 	box-shadow: 0 -1.5px 0 0 #fff;
+	min-height: 75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h1 {
@@ -53,17 +57,3 @@ textarea {
 label {
 	display: none;
 }
-
-.email-me {
-	margin-top: 4em;
-	padding: 0 0.5em;
-	a {
-		text-decoration: none;
-		color: #571f4e;
-		background-color: #fff;
-		padding-bottom: 4em;
-		font-size: 0.75em;
-	}
-}
-
-.thankyou-container {}

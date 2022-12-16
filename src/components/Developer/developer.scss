@@ -94,7 +94,7 @@
 			box-shadow: 0 0.1em 0.25em 0 #eee;
 			a {
 				text-decoration: none;
-				padding: 1em 0;
+				padding: 0.5em 0;
 			}
 			h2 {
 				font-size: 0.75em;
@@ -104,7 +104,7 @@
 				font-size: 0.75em;
 			}
 			.code-link {
-				padding: 2em 0;
+				padding: 2em 0 0 0;
 				font-size: 0.25em;
 				display: block;
 				max-width: 50%;
@@ -113,8 +113,8 @@
 			}
 			.tags {
 				position: absolute;
-				top: 2%;
-				right: 2%;
+				top: 4%;
+				right: 4%;
 				color: #000;
 			}
 		}

@@ -71,7 +71,6 @@ const Contact = () => {
     setSending(true);
     const productionUrl =
       "https://react-portfolio-server-production-3097.up.railway.app";
-    const devUrl = "http://localhost:8080";
     const data = {
       name: name,
       email: email,
@@ -145,10 +144,6 @@ const Contact = () => {
           </textarea>
           <button type="submit">{sending ? <SyncLoader /> : "Send"} </button>
         </form>
-        <div className="email-me">
-          <h2>Let's talk..</h2>
-          <a href="mailto:ryanlarge@ryanlarge.dev">ryanlarge@ryanlarge.dev</a>
-        </div>
       </section>
     </>
   );
