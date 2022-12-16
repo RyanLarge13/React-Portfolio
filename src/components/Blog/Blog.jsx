@@ -30,7 +30,7 @@ const Blog = ({ onBlogClick }) => {
                 <p dangerouslySetInnerHTML={{ __html: blog.Story }} />
               </div>
               <p className="date">
-                {blog.Date.toLocaleString("en-GB", { timeZone: "UTC" })}
+                {blog.Date}
               </p>
               <p className="author">- {blog.Author}</p>
               <button onClick={() => onBlogClick(blog)}>View More</button>
@@ -38,7 +38,7 @@ const Blog = ({ onBlogClick }) => {
           ))}
         </section>
       ) : (
-        <DotLoader />
+        <DotLoader className="loader" />
       )}
     </>
   );

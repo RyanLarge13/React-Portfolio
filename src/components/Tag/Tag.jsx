@@ -7,7 +7,8 @@ const Tag = ({ project, onCloseClick }) => {
     <>
       <motion.div
         initial={{ scale: 0 }}
-        whileInView={{ scale: [1.2, 0.9, 1.1, 1] }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 300 }}
         className="tag-list"
       >
         <AiFillCloseCircle

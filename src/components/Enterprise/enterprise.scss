@@ -31,9 +31,10 @@
 
 	.title {
 		position: fixed;
-		transform: rotate(90deg);
+		transform: rotate(90deg) translateX(-50%);
 		font-size: 1.25em;
 		left: -5%;
+		top: 50%;
 		z-index: -1;
 
 		&::before {

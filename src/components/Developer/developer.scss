@@ -1,5 +1,5 @@
 .info {
-	padding: 0 1em;
+	padding: 1em;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -18,9 +18,10 @@
 
 	.title {
 		position: fixed;
-		transform: rotate(90deg);
+		transform: rotate(90deg) translateX(-50%);
 		font-size: 1.25em;
 		left: -5%;
+		top: 50vh;
 		z-index: -1;
 		&::before {
 			content: "";
@@ -62,7 +63,7 @@
 	width: 200px;
 	height: 400px;
 	border-radius: 1em;
-	box-shadow: 0 0.1em 0.25em #aaa;
+	box-shadow: 0 0.05em 0.1em #aaa;
 }
 .code-img {
 	position: absolute;
@@ -76,8 +77,8 @@
 }
 
 .project-container {
-	width: 90%;
-	margin-left: 10%;
+	width: 80%;
+	margin-left: 15%;
 	.project-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -88,11 +89,12 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: flex-start;
-			padding: 0.5em;
+			padding: 1em 0.75em;
 			border-radius: 1em;
 			box-shadow: 0 0.1em 0.25em 0 #eee;
 			a {
 				text-decoration: none;
+				padding: 1em 0;
 			}
 			h2 {
 				font-size: 0.75em;
@@ -102,6 +104,7 @@
 				font-size: 0.75em;
 			}
 			.code-link {
+				padding: 2em 0;
 				font-size: 0.25em;
 				display: block;
 				max-width: 50%;

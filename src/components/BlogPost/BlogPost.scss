@@ -8,17 +8,47 @@
 	z-index: 900;
 	background-color: #fff;
 
+	h1 {
+		margin-bottom: 0.5em;
+	}
+
+	h2 {
+		margin-bottom: 1em;
+	}
+
 	img {
-		max-width: 90%;
+		max-width: 100%;
+		min-width: 100%;
+		border-radius: 1em;
+	}
+
+	h3 {
+		margin-top: 1.25em;
+		font-size: 2em;
+	}
+	h4 {
+		margin-bottom: 0.5em;
+		margin-top: 1em;
+	}
+	ul {
+		margin-left: 2em;
+	}
+	.story {
+		&:first-letter {
+			margin-left: 2em;
+		}
 	}
 
 	.close {
-		margin-bottom: 20vh;
-		margin-left: 70vw;
+		margin-bottom: 15vh;
+		margin-top: 2em;
 		border: none;
 		outline: none;
 		border-radius: 1em;
 		padding: 0.25em 0.5em;
 		box-shadow: 0 0.1em 0.25em #eee;
+	}
+	.author {
+		margin-top: 1em;
 	}
 }
