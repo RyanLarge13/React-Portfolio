@@ -54,15 +54,20 @@ my skills in Web Development and about myself.
          * This section envelopes 4 nested state values via useState and useEffect. 
 The use effect calls on and queries my projects from the server and MongoDB and displays each one
 in the browser as a card with a short description, a title that links the project to its Webpage if
-one exsists, and a link at the bottom to view each individual src code. 
-         * A tag icon toggles the state for viewing a sperate card modal popup with a list of each technologies used
+one exsists, and a link at the bottom to view each projects individual src code. 
+         * A tag icon toggles the state for viewing a separate card modal popup with a list of each technologies used
 in the application
       - Blogs
-         * This section consists of a paginated list 
-of blogs I created that are a form a more in depth resume section 
+         * This section is consists of a paginated list 
+of blogs I created that are designed to be more like an in-depth resume section 
 containing more detailed information about my skill sets. 
          * A view button allows a user to blow up the blog article 
 to full size via the useState hook and allow a user to easily read. 
 
+## Downloading My Resume
+My professional resume can be downloaded and accessible 
+by clicking the cloud download button on the top right
+of the header.
+
 ## Conclusion
-If there are any questions or to visit the site, please visit this site @ www.ryanlarge.dev and send an email.
+If there are any questions or to view the site, please visit www.ryanlarge.dev and send an email.
