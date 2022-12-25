@@ -63,7 +63,6 @@
 	width: 200px;
 	height: 400px;
 	border-radius: 1em;
-	box-shadow: 0 0.05em 0.1em #aaa;
 }
 .code-img {
 	position: absolute;
@@ -72,7 +71,6 @@
 	width: 200px;
 	height: 400px;
 	border-radius: 1em;
-	box-shadow: 0 0.1em 0.25em #aaa;
 	z-index: -1;
 }
 
@@ -87,7 +85,7 @@
 			position: relative;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: space-between;
 			align-items: flex-start;
 			padding: 1em 0.75em;
 			border-radius: 1em;

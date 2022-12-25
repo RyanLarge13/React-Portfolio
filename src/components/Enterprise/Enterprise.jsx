@@ -35,19 +35,26 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="pub-intro"
+              className="pub-intro line-height"
             >
-              Working in this industry has brought various amounts of work,
-              ranging between programming to web development and with those
-              wonderful subjects I have mastered various skills and produced
-              amazing products with intriguing content.
+              Working in this industry has brought me amazing amounts of work
+              ranging between programming in Web Development, all the way to the
+              world of developing Desktop Applications! Then back again to the
+              amazing React Native framework developing Mobile Apps, and with
+              those wonderful subjects I have mastered various skills and
+              produced amazing products with intriguing content!!
             </motion.p>
-            <motion.p whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
+            <motion.p
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="line-height"
+            >
               My experience and strength lie in a strong understanding of
-              Mongodb, Express, React, and Node.js. These are not my only
-              powerful skills. I also am fluent in many other languages such as
-              CSS, HTML, Python, C++ and more, including a large amount of
-              Javascript libraries & frameworks.
+              MongoDB, Express, React, and Node.js. These are not my only
+              powerful skills, but I love developing with them & I use them
+              heavily when developing browser applications. But, I am also
+              fluent in many other languages and frameworks, notably: CSS, HTML,
+              Python, C++, React, React Native & Bash.
             </motion.p>
           </section>
           <h2 className="major-heading">Skills</h2>
@@ -68,24 +75,51 @@ const Enterprise = ({ onEnterpriseClick }) => {
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 0.5 }}
+              className="line-height"
             >
-              My techstack knowledge began in June 2022 while enrolling in
+              My techstack knowledge began in June 2022 after enrolling in
               CareerFoundry's Fullstack Web Development course. When it comes to
-              web development, these are the tools I use to shine the brightest.
+              web development, these are the tools I use to shine the brightest
+              & what I spend most of my time learning and building my knowledge
+              with to get a strong foot hold on efficiency & cleanliness in Web
+              Development
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 0.5 }}
+              className="line-height"
             >
-              MongoDB CLI, Atlas, Compass and mongoose have all been implemented
-              throughout various projects with advanced logic and queries.
-              Express is the only framework I will use on personal projects as
-              it is the most effective, efficient and extremely modular. React
-              was born and so was the SPA. Every large project I create in Web
-              Development I use React as it is my #1 clientside framework.
-              Node.js is used in every single React project, any project that
-              requires me to set up a database, and run a fast modular server.
+              There is a multitude of reasons behind why I love this tech stack
+              so much! Starting with MongoDB, I am a huge fan of non-relational
+              databases. I believe the freedom they give to a developer is not
+              only essential for the size of projects I find myself working on,
+              but also easily compatable with Javascript which is a beneficial
+              system when keeping your code readable, clean & effective! Node.js
+              I love for the same reasons, the compatability with javascript
+              makes this development tool an amazing and powerful system when
+              used correctly for making extremely fast and modular servers.
+              Express takes the value when your goal is to manipulate http
+              requests and routing. I have yet to find a better framework with
+              cleaner code. And of course React is my favorite framework for
+              client side logic and user interface for no other reason but it's
+              speed. This speed I speak of not only derives from within the
+              browser itself as when state is manipulate, but also while writing
+              large, or even medium sized applications. The number of SLOC is
+              diminished by 3rds and your time is saved & preserved by thousands
+              of minutes while still accomplishing even better, cleaner results
+              than without React.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 0.5 }}
+              className="line-height"
+            >
+              On a side note, I wanted to mention that in all honesty Next.js 13
+              has out done React in many ways and I consider myself more to
+              officially be a MENN stack developer. MongoDB, Express, Next &
+              Node.js
             </motion.p>
             <div className="social">
               <a href="https://twitter.com/ryan_large13?t=_NZ-7J0bK6XSMcB6_YuVcA&s=09">
@@ -105,14 +139,18 @@ const Enterprise = ({ onEnterpriseClick }) => {
               Professional
             </motion.h3>
             <motion.p
-              className="ml"
+              className="ml line-height"
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 0.5 }}
             >
               My professional history and environment consists of E-commerce
-              builds for local business, managing databases, and creating
-              software for manufacturing industries.
+              builds for local business, managing databases and creating
+              software for manufacturing industries. I also have professional
+              experience developing mobile Android applications with the React
+              Native framework & experience developing desktop applications,
+              cli's with bash & I am beginning to dig my fingers into machine
+              learning & Robotics with both Python and C++
             </motion.p>
             <motion.h3
               initial={{ y: 100, opacity: 0 }}
@@ -124,12 +162,16 @@ const Enterprise = ({ onEnterpriseClick }) => {
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 0.5 }}
-              className="bg-white ml"
+              className="bg-white ml line-height"
             >
-              Personal work, and hobbiest builds are prioritized with web and
-              mobile development ranging from utility tools, E-commerce sites
-              for my own businesses and family business, advertisment, software,
-              and experimental scripting with bash.
+              Personal work and hobbies builds mostly take up my time in the
+              form of Web Development at the forefront, Mobile Development as a
+              way to change up my routine, and desktop application development
+              using the Javascript framework Electron. My personal work ranges
+              from building utility tools, E-commerce sites for my own
+              businesses and family business, computer software, experimental
+              scripting with bash and dabbling in robotics and machine learning
+              with the popular starter kits by Arduino.
             </motion.p>
             <Developer onDevClick={(bool) => setSection(bool)} />
           </section>

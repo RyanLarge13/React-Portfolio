@@ -79,17 +79,18 @@
 	}
 }
 
-.publications {
-	margin: 25vh 1.7vw 0 1.7vw;
-	text-align: right;
-	color: rgba(0, 0, 0, 0.6);
-
-	p {
+	.line-height {
 		margin: 1em 0;
 		margin-left: 15vw;
 		line-height: 2em;
 		opacity: 0;
 	}
+	
+.publications {
+	margin: 25vh 1.7vw 0 1.7vw;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.6);
+
 
 	@media (min-width: 1600px) and (min-height: 800px) {
 		text-align: left;
