@@ -52,7 +52,7 @@ const Contact = () => {
   const notifyErr = (message) => {
     toast.error(`Please ${message} the form before submission.`, {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 4500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -86,7 +86,6 @@ const Contact = () => {
     })
       .then((res) => res.json())
       .then((url) => {
-        console.log(url);
         setSending(false);
         setName("");
         setEmail("");
