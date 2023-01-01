@@ -65,12 +65,12 @@
 
 .me {
 	opacity: 0;
-	scale: 0.5;
 	position: absolute;
-	top: 15%;
-	right: -35%;
+	top: 45%;
+	right: 0;
 	box-shadow: 0 0.1em 0.25em #eee;
 	border-radius: 0.75em;
+	max-width: 75%;
 
 	@media (min-width: 1600px) and (min-height: 800px) {
 		top: 5%;
@@ -79,13 +79,13 @@
 	}
 }
 
-	.line-height {
-		margin: 1em 0;
-		margin-left: 15vw;
-		line-height: 2em;
-		opacity: 0;
-	}
-	
+.line-height {
+	margin: 1em 0;
+	margin-left: 15vw;
+	line-height: 2em;
+	opacity: 0;
+}
+
 .publications {
 	margin: 25vh 1.7vw 0 1.7vw;
 	text-align: right;
