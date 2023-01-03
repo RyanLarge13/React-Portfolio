@@ -37,23 +37,25 @@ const Developer = ({ onDevClick, onoroff }) => {
               <p>Developer</p>
             </div>
           </section>
-          <h1 className="major-heading">Projects</h1>
-          <motion.img
-            initial={{ opacity: 0 }}
-            transition={{ delay: 0.3 }}
-            whileInView={{ opacity: 1 }}
-            src={githubProfile}
-            alt="y github profile"
-            className="git-img"
-          />
-          <motion.img
-            initial={{ opacity: 0 }}
-            transition={{ delay: 0.25 }}
-            whileInView={{ opacity: 1 }}
-            src={code}
-            alt="Github profile code"
-            className="code-img"
-          />
+          <div className="dev-img-container">
+            <motion.img
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.3 }}
+              whileInView={{ opacity: 1 }}
+              src={githubProfile}
+              alt="y github profile"
+              className="git-img"
+            />
+            <motion.img
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.25 }}
+              whileInView={{ opacity: 1 }}
+              src={code}
+              alt="Github profile code"
+              className="code-img"
+            />
+          </div>
+          <h1 className="major-heading project-title">Projects</h1>
           <section className="project-container">
             {projects.length > 0 ? (
               <div className="project-grid">

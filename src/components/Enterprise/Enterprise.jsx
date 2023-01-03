@@ -13,10 +13,10 @@ const Enterprise = ({ onEnterpriseClick }) => {
       {section ? (
         <>
           <section className="enterprise">
-            <div className="title" /*onClick={() => setSection(false)}*/>
+            <div className="title">
               <p>Enterprise</p>
             </div>
-            <h2 className="major-heading">About me</h2>
+            <h2 className="major-heading about-me">About me</h2>
             <motion.img
               transition={{ delay: 0.2 }}
               whileInView={{ opacity: 1 }}

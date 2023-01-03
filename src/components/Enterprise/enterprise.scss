@@ -13,26 +13,27 @@
 }
 
 .major-heading {
-	margin-left: 2em;
+	margin-left: 1em;
 	padding-top: 1em;
 	padding-bottom: 0.5em;
 	font-size: 3em;
 	color: rgba(0, 0, 0, 0.4);
+}
 
-	@media (min-width: 1600px) and (min-height: 800px) {
-		margin-left: 5%;
-	}
+.about-me {
+	margin-left: 2em;
 }
 
 .enterprise {
-	width: 90vw;
-	margin: 0 2.5vw;
-	height: 50vh;
+
+	h2 {
+		margin-top: 50%;
+	}
 
 	.title {
+		font-size: 1.25em;
 		position: fixed;
 		transform: rotate(90deg) translateX(-50%);
-		font-size: 1.25em;
 		left: -5%;
 		top: 50%;
 		z-index: -1;
@@ -56,27 +57,15 @@
 			top: 50%;
 			right: -100%;
 		}
-
-		p {
-			padding: 0.25em;
-		}
 	}
 }
 
 .me {
 	opacity: 0;
-	position: absolute;
-	top: 45%;
-	right: 0;
+	margin-left: 25%;
 	box-shadow: 0 0.1em 0.25em #eee;
 	border-radius: 0.75em;
 	max-width: 75%;
-
-	@media (min-width: 1600px) and (min-height: 800px) {
-		top: 5%;
-		right: 5%;
-		scale: 0.75;
-	}
 }
 
 .line-height {
@@ -87,25 +76,9 @@
 }
 
 .publications {
-	margin: 25vh 1.7vw 0 1.7vw;
+	margin: 2em 1.7vw 0 1.7vw;
 	text-align: right;
 	color: rgba(0, 0, 0, 0.6);
-
-
-	@media (min-width: 1600px) and (min-height: 800px) {
-		text-align: left;
-		margin-top: -15vh;
-		margin-bottom: 10vh;
-
-		h3 {
-			margin-left: 5%;
-		}
-
-		p {
-			margin-left: 5%;
-			max-width: 50vw;
-		}
-	}
 }
 
 .skills {
@@ -125,15 +98,7 @@
 		justify-content: space-between;
 		width: 2.25em;
 		color: #571f4e;
-	}
-
-	@media (min-width: 1600px) and (min-height: 800px) {
-		margin-left: 5%;
-
-		p {
-			max-width: 50vw;
-			line-height: 2em;
-		}
+		margin-top: -1em;
 	}
 }
 
