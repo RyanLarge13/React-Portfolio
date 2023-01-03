@@ -31,7 +31,7 @@ and exit the application
       - Pros
          - Extremely fast website rendering
    - useEffect is used lightly. Only to first fetch data when the
-state of the application has changed
+state of a specific target component has changed
 
 ## Installation & Execution
 ***This application was not created for the purpose of sharing code
