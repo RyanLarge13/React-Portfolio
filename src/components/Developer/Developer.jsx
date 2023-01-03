@@ -55,7 +55,7 @@ const Developer = ({ onDevClick, onoroff }) => {
               className="code-img"
             />
           </div>
-          <h1 className="major-heading project-title">Projects</h1>
+          <h2 className="major-heading project-title">Projects</h2>
           <section className="project-container">
             {projects.length > 0 ? (
               <div className="project-grid">
