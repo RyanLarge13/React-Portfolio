@@ -119,7 +119,11 @@
 }
 
 .project-title {
-	margin-top: 75vh;
+	margin-top: 50vh;
+
+	@media (min-width: 1250px) and (max-width: 3000px) {
+		margin-top: 75vh;
+	}
 }
 
 .project-container {
