@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import {
   BsInstagram,
   BsFacebook,
@@ -28,6 +29,7 @@ const Social = () => {
           <BsInstagram className="i" />
         </a>
       </div>
+      <Footer />
     </>
   );
 };
