@@ -185,7 +185,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               setSection(true);
             }}
           >
-            <AiFillPlusCircle />
+            <AiFillPlusCircle className="plus-icon"/>
             <p>Enterprise</p>
           </div>
         </>

@@ -51,6 +51,7 @@ const Blog = ({ onBlogClick }) => {
 
   const translate = (index) => {
     setMoveBlog(index * -100);
+    setBlogIndex(index + 1);
   };
 
   return (

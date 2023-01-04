@@ -115,7 +115,7 @@ const Developer = ({ onDevClick, onoroff }) => {
               onDevClick(false);
             }}
           >
-            <AiFillPlusCircle />
+            <AiFillPlusCircle className="plus-icon" />
             <p>Developer</p>
           </div>
         </>

@@ -21,19 +21,21 @@
 			background-color: rgba(0, 0, 0, 0.4);
 			border-radius: 50%;
 			transition: 250ms ease-in-out;
+			cursor: pointer;
 		}
 
 		.indicator-dot-on {
 			width: 14px;
 			height: 14px;
 			margin: 0 3px;
-			background-color: rgba(0, 0, 0, 1);
+			background-color: #571f4e;
 			border-radius: 50%;
 			transition: 250ms ease-in-out;
+			cursor: pointer;
 		}
 	}
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		margin-left: 5.5%;
 		margin-bottom: 1em;
 	}
@@ -88,6 +90,8 @@
 		outline: none;
 		padding: 0.5em 1em;
 		background-color: #fff;
+		cursor: pointer;
+		color: #571f4e;
 	}
 }
 

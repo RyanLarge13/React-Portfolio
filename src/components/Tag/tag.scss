@@ -13,18 +13,29 @@
 	align-items: flex-start;
 	padding: 1em;
 	background-color: #fff;
+
 	.close {
 		position: absolute;
 		top: 2.5%;
 		left: 5%;
+		cursor: pointer;
 	}
+
 	h3 {
 		margin-bottom: 1em;
 	}
+
 	h4 {
 		margin-bottom: 0.75em;
 	}
+
 	ul {
 		margin-left: 1em;
+	}
+
+	@media (min-width: 1250px) and (max-width: 3000px) {
+		.close {
+			left: 2%;
+		}
 	}
 }

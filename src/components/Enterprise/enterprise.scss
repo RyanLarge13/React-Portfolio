@@ -7,9 +7,13 @@
 	box-shadow: 0 0.1em 0.1em 0 #eee;
 	background-color: #fff;
 	cursor: pointer;
-
+	
 	p {
 		margin-left: 1em;
+		color: #571f4e;
+	}
+	.plus-icon {
+		color: #000;
 	}
 }
 
@@ -24,7 +28,7 @@
 		margin-left: 2em;
 	}
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		margin-left: 1.5em;
 	}
 }
@@ -32,7 +36,7 @@
 .about-me {
 	margin-left: 2em;
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		margin-left: 1.5em;
 	}
 }
@@ -44,6 +48,9 @@
 
 		@media (min-width: 1250px) and (max-width: 1500px) {
 			margin-top: 10%;
+		}
+		@media (min-width: 1250px) and (max-width: 3000px) {
+			margin-top: 25%;
 		}
 	}
 
@@ -79,7 +86,7 @@
 			left: -1.5%;
 		}
 
-		@media (min-width: 1250px) and (max-width: 1500px) {
+		@media (min-width: 1250px) and (max-width: 3000px) {
 			left: -1%;
 		}
 	}
@@ -92,7 +99,7 @@
 	border-radius: 0.75em;
 	max-width: 75%;
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		position: absolute;
 		right: 0;
 		top: 15%;
@@ -112,7 +119,7 @@
 	text-align: right;
 	color: rgba(0, 0, 0, 0.6);
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		text-align: left;
 		max-width: 50%;
 
@@ -146,7 +153,7 @@
 		margin-top: -1em;
 	}
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		margin-left: 7.5%;
 
 		h3 {
@@ -187,7 +194,7 @@
 		background-color: #fff;
 	}
 
-	@media (min-width: 1250px) and (max-width: 1500px) {
+	@media (min-width: 1250px) and (max-width: 3000px) {
 		text-align: left;
 
 		h3 {

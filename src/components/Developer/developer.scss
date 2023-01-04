@@ -7,9 +7,15 @@
 	box-shadow: 0 0.1em 0.1em 0 #eee;
 	background-color: #fff;
 	cursor: pointer;
+	color: #571f4e;
 
 	p {
 		margin-left: 1em;
+		color: #571f4e;
+	}
+
+	.plus-icon {
+		color: #000;
 	}
 }
 
@@ -48,6 +54,10 @@
 
 		@media (min-width: 1250px) and (max-width: 1500px) {
 			left: -1%;
+		}
+
+		@media (min-width: 1250px) and (max-width: 3000px) {
+			left: -0.5%;
 		}
 	}
 }
@@ -89,6 +99,21 @@
 		.code-img {
 			transform: scale(1.5);
 			top: 70%;
+		}
+	}
+
+	@media (min-width: 1250px) and (max-width: 3000px) {
+		margin-top: 10%;
+
+		.git-img {
+			transform: scale(2);
+			right: 15%;
+		}
+
+		.code-img {
+			transform: scale(2);
+			top: 70%;
+			right: 40%;
 		}
 	}
 }
@@ -144,6 +169,7 @@
 				top: 4%;
 				right: 4%;
 				color: #000;
+				cursor: pointer;
 			}
 		}
 	}
@@ -151,6 +177,15 @@
 	@media (min-width: 1250px) and (max-width: 1500px) {
 		margin-left: 5.5%;
 		width: 94%;
+
+		.project-grid {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	@media (min-width: 1250px) and (max-width: 3000px) {
+		margin-left: 5%;
+		width: 90%;
 
 		.project-grid {
 			grid-template-columns: repeat(4, 1fr);
