@@ -34,6 +34,9 @@
 			top: 50%;
 			right: -100%;
 		}
+			@media (min-width: 500px) and (max-width: 1200px) {
+	  left: -1.5%;
+	}
 	}
 }
 .developer.open {
