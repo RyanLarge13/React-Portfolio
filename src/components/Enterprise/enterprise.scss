@@ -6,6 +6,7 @@
 	border-radius: 0 0 1em 1em;
 	box-shadow: 0 0.1em 0.1em 0 #eee;
 	background-color: #fff;
+	cursor: pointer;
 
 	p {
 		margin-left: 1em;
@@ -18,19 +19,32 @@
 	padding-bottom: 0.5em;
 	font-size: 3em;
 	color: rgba(0, 0, 0, 0.4);
+
 	@media (min-width: 500px) and (max-width: 1200px) {
-	  margin-left: 2em;
+		margin-left: 2em;
+	}
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		margin-left: 1.5em;
 	}
 }
 
 .about-me {
 	margin-left: 2em;
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		margin-left: 1.5em;
+	}
 }
 
 .enterprise {
 
 	h2 {
 		margin-top: 50%;
+
+		@media (min-width: 1250px) and (max-width: 1500px) {
+			margin-top: 10%;
+		}
 	}
 
 	.title {
@@ -60,9 +74,14 @@
 			top: 50%;
 			right: -100%;
 		}
-	@media (min-width: 500px) and (max-width: 1200px) {
-	  left: -1.5%;
-	}
+
+		@media (min-width: 500px) and (max-width: 1200px) {
+			left: -1.5%;
+		}
+
+		@media (min-width: 1250px) and (max-width: 1500px) {
+			left: -1%;
+		}
 	}
 }
 
@@ -72,6 +91,13 @@
 	box-shadow: 0 0.1em 0.25em #eee;
 	border-radius: 0.75em;
 	max-width: 75%;
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		position: absolute;
+		right: 0;
+		top: 15%;
+		max-width: 40%;
+	}
 }
 
 .line-height {
@@ -85,6 +111,19 @@
 	margin: 2em 1.7vw 0 1.7vw;
 	text-align: right;
 	color: rgba(0, 0, 0, 0.6);
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		text-align: left;
+		max-width: 50%;
+
+		h3 {
+			margin-left: 7.5%;
+		}
+
+		p {
+			margin-left: 7.5%;
+		}
+	}
 }
 
 .skills {
@@ -106,6 +145,28 @@
 		color: #571f4e;
 		margin-top: -1em;
 	}
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		margin-left: 7.5%;
+
+		h3 {
+			margin-left: -1em;
+		}
+
+		ul {
+			margin-left: 0;
+		}
+
+		p {
+			padding: 0;
+			padding-right: 10%;
+			margin-top: 1em;
+		}
+
+		.social {
+			margin-left: -1em;
+		}
+	}
 }
 
 .experience {
@@ -124,6 +185,19 @@
 
 	.bg-white {
 		background-color: #fff;
+	}
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		text-align: left;
+
+		h3 {
+			margin-left: 5.5%;
+		}
+
+		.ml {
+			margin-left: 5.5%;
+			padding-right: 10%;
+		}
 	}
 }
 

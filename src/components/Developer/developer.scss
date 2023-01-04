@@ -6,6 +6,11 @@
 	border-radius: 0 0 1em 1em;
 	box-shadow: 0 0.1em 0.1em 0 #eee;
 	background-color: #fff;
+	cursor: pointer;
+
+	p {
+		margin-left: 1em;
+	}
 }
 
 .developer {
@@ -16,6 +21,7 @@
 		left: -5%;
 		top: 50vh;
 		z-index: -1;
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -25,6 +31,7 @@
 			top: 50%;
 			left: -100%;
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -34,11 +41,17 @@
 			top: 50%;
 			right: -100%;
 		}
-			@media (min-width: 500px) and (max-width: 1200px) {
-	  left: -1.5%;
-	}
+
+		@media (min-width: 500px) and (max-width: 1200px) {
+			left: -1.5%;
+		}
+
+		@media (min-width: 1250px) and (max-width: 1500px) {
+			left: -1%;
+		}
 	}
 }
+
 .developer.open {
 	pointer-events: none;
 }
@@ -46,6 +59,7 @@
 .dev-img-container {
 	position: relative;
 	height: 40vh;
+
 	.git-img {
 		position: absolute;
 		top: 30%;
@@ -54,6 +68,7 @@
 		height: 400px;
 		border-radius: 1em;
 	}
+
 	.code-img {
 		position: absolute;
 		top: 50%;
@@ -63,18 +78,34 @@
 		border-radius: 1em;
 		z-index: -1;
 	}
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		margin-top: 10%;
+
+		.git-img {
+			transform: scale(1.5);
+		}
+
+		.code-img {
+			transform: scale(1.5);
+			top: 70%;
+		}
+	}
 }
+
 .project-title {
-	margin-top: 30vh;
-//	margin-left: -3em;
+	margin-top: 75vh;
 }
+
 .project-container {
 	width: 80%;
 	margin-left: 15%;
+
 	.project-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1em;
+
 		.project {
 			position: relative;
 			display: flex;
@@ -84,17 +115,21 @@
 			padding: 1em 0.75em;
 			border-radius: 1em;
 			box-shadow: 0 0.1em 0.25em 0 #eee;
+
 			a {
 				text-decoration: none;
 				padding: 0.5em 0;
 			}
+
 			h2 {
 				font-size: 0.75em;
 				color: #571f4e;
 			}
+
 			p {
 				font-size: 0.75em;
 			}
+
 			.code-link {
 				padding: 2em 0 0 0;
 				font-size: 0.25em;
@@ -103,12 +138,22 @@
 				color: #571f4e;
 				justify-self: flex-end;
 			}
+
 			.tags {
 				position: absolute;
 				top: 4%;
 				right: 4%;
 				color: #000;
 			}
+		}
+	}
+
+	@media (min-width: 1250px) and (max-width: 1500px) {
+		margin-left: 5.5%;
+		width: 94%;
+
+		.project-grid {
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 }
