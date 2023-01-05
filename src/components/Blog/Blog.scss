@@ -1,11 +1,12 @@
 .blog-container {
 	position: relative;
-	max-width: 85vw;
-	min-width: 85vw;
+	max-width: 80vw;
+	min-width: 80vw;
 	margin-left: 15%;
-	padding: 1em 0;
+	padding: 1em 5px;
 	min-height: 25vh;
 	display: flex;
+	justify-content: flex-start;
 	overflow-x: hidden;
 
 	.indicator {
@@ -46,10 +47,9 @@
 	max-width: 95%;
 	min-width: 95%;
 	border-radius: 1em;
-	box-shadow: 0 0.1em 0.25em #eee;
+	box-shadow: 0 0.1em 0.25em 0 #eee;
 	padding: 1em;
-	margin: 1em 0;
-	margin-right: 5%;
+	margin: 1em 2.5%;
 	transition: 250ms ease-in-out;
 
 	img {

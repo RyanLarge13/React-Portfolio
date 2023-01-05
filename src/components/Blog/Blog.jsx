@@ -66,7 +66,7 @@ const Blog = ({ onBlogClick }) => {
         >
           {blogs.map((blog) => (
             <motion.div
-              style={{ transform: `translateX(${moveBlog}%)` }}
+              style={{ transform: `translateX(${moveBlog * 1.05}%)` }}
               className="blog"
               key={blog._id}
               initial={{ opacity: 0 }}
