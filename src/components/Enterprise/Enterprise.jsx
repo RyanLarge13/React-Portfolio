@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiFillPlusCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -8,6 +8,11 @@ import "./enterprise.scss";
 
 const Enterprise = ({ onEnterpriseClick }) => {
   const [section, setSection] = useState(true);
+  
+  useEffect(() => {
+  	window.scrollTo(0, 0)
+  })
+  
   return (
     <>
       {section ? (

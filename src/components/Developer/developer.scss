@@ -1,3 +1,5 @@
+//--ignore-compile
+
 .info {
 	padding: 1em;
 	display: flex;
@@ -134,6 +136,10 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1em;
+		justify-content: space-evenly;
+		align-content: start;
+		min-height: 80vh;
+		max-height: 80vh;
 
 		.project {
 			position: relative;
@@ -194,6 +200,36 @@
 		.project-grid {
 			grid-template-columns: repeat(4, 1fr);
 		}
+	}
+}
+
+.paginate-btns {
+	padding: 0.75em 0;
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+
+	button {
+		font-size: 0.75em;
+		border-radius: 1em;
+		box-shadow: 0 0.1em 0.25em #eee;
+		border: none;
+		outline: none;
+		padding: 0.5em 1em;
+		background-color: #fff;
+		cursor: pointer;
+		color: #571f4e;
+	}
+
+	button.no-touch {
+		color: rgba(0, 0, 0, 0.4);
+		pointer-events: none;
+	}
+
+	p {
+		margin: 0 1.5em;
 	}
 }
 

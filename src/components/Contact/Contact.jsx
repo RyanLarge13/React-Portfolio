@@ -15,14 +15,14 @@ const Contact = () => {
 
   const checkName = (e) => {
     const array = name.split("");
-    const conditions = ["<", ">", ";", "[", "]"];
+    const conditions = ["<", ">", ";", "[", "]", "(", ")", "/", "-"];
     const check = conditions.some((letter) => array.includes(letter));
     check ? setInvalidName(true) : setInvalidName(false);
   };
 
   const checkEmail = (e) => {
     const array = email.split("");
-    const conditions = ["<", ">", ";", "[", "]"];
+    const conditions = ["<", ">", ";", "[", "]", "(", ")", "/", "-"];
     const check = conditions.some((letter) => array.includes(letter));
     check ? setInvalidEmail(true) : setInvalidEmail(false);
   };
@@ -50,7 +50,7 @@ const Contact = () => {
     );
 
   const notifyErr = (message) => {
-    toast.error(`Please ${message} the form before submission.`, {
+    toast.error(message, {
       position: "top-center",
       autoClose: 4500,
       hideProgressBar: false,
@@ -62,13 +62,25 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (invalidName || invalidEmail || invalidMessage)
-      return notifyErr("correct");
+      return notifyErr(
+        "Please correct the form below, do not include < > ; [ or ]"
+      );
     if (message === "" || email === "" || name === "")
-      return notifyErr("complete");
+      return notifyErr(
+        "You cannot send empty fields, please fill out the form"
+      );
+    if (message.length < 3 || email.length < 10 || name.length < 3)
+      return notifyErr(
+        "Name & message must be a minimum length of 3. Email must be 10"
+      );
     setSending(true);
+    sendMessage();
+  };
+
+  const sendMessage = async () => {
     const productionUrl =
       "https://react-portfolio-server-production-3097.up.railway.app";
     const data = {
@@ -121,7 +133,6 @@ const Contact = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             onKeyUp={checkName}
-            required
             autofocus
             min="3"
           />
@@ -135,7 +146,6 @@ const Contact = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onKeyUp={checkEmail}
-            required
             autocomplete="on"
             min="5"
           />
@@ -145,8 +155,6 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             onKeyUp={checkMessage}
             value={message}
-            required
-            min="10"
           >
             {message}
           </textarea>

@@ -1,3 +1,5 @@
+//--ignore-compile
+
 .contact {
 	background-color: #fff;
 	box-shadow: 0 -1.5px 0 0 #fff;
@@ -24,16 +26,16 @@ form {
 	background-color: #fff;
 
 	button {
-		padding: 0.2em 0.5em;
 		font-size: 1.25em;
 		align-self: start;
+		border-radius: 1em;
+		box-shadow: 0 0.1em 0.25em #eee;
 		border: none;
 		outline: none;
-		background-image: linear-gradient(45deg, #fff, #eee);
-		border-radius: 0.25em;
-		box-shadow: 0 0.1em 0.25em 0 #eee;
-		color: #571f4e;
+		padding: 0.5em 1em;
+		background-color: #fff;
 		cursor: pointer;
+		color: #571f4e;
 	}
 }
 
