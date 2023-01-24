@@ -69,12 +69,11 @@
 }
 
 .dev-img-container {
-	position: relative;
-	height: 40vh;
+	min-height: 25vh;
 
 	.git-img {
 		position: absolute;
-		top: 30%;
+		top: 10%;
 		right: 5%;
 		width: 200px;
 		height: 400px;
@@ -83,7 +82,7 @@
 
 	.code-img {
 		position: absolute;
-		top: 50%;
+		top: 20%;
 		right: 30%;
 		width: 200px;
 		height: 400px;
@@ -138,8 +137,7 @@
 		gap: 1em;
 		justify-content: space-evenly;
 		align-content: start;
-		min-height: 80vh;
-		max-height: 80vh;
+		min-height: 70vh;
 
 		.project {
 			position: relative;

@@ -102,7 +102,7 @@ const Developer = ({ onDevClick, onoroff }) => {
                     />
                   )}
                 </div>
-                <div class="paginate-btns">
+                <div className="paginate-btns">
                   {previous ? (
                     <button onClick={() => setPage((prev) => prev - 1)}>
                       Prev

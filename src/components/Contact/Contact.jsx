@@ -133,7 +133,7 @@ const Contact = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             onKeyUp={checkName}
-            autofocus
+            autoFocus
             min="3"
           />
           <label htmlFor="email">Email</label>
@@ -146,7 +146,7 @@ const Contact = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onKeyUp={checkEmail}
-            autocomplete="on"
+            autoComplete="on"
             min="5"
           />
           <textarea

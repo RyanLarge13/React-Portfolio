@@ -26,13 +26,16 @@
 		margin-top: 1.25em;
 		font-size: 2em;
 	}
+
 	h4 {
 		margin-bottom: 0.5em;
 		margin-top: 1em;
 	}
+
 	ul {
 		margin-left: 2em;
 	}
+
 	.story {
 		&:first-letter {
 			margin-left: 2em;
@@ -50,6 +53,7 @@
 		cursor: pointer;
 		color: #571f4e;
 	}
+
 	.author {
 		margin-top: 1em;
 	}
