@@ -10,6 +10,11 @@
 	background-color: #fff;
 	cursor: pointer;
 	color: #571f4e;
+	transition: 500ms ease-in-out;
+
+	&:hover {
+		box-shadow: 0 0.2em 0.2em 0 #ddd;
+	}
 
 	p {
 		margin-left: 1em;
@@ -107,14 +112,15 @@
 		margin-top: 10%;
 
 		.git-img {
-			transform: scale(2);
+			transform: scale(1.5);
 			right: 15%;
+			top: 30%;
 		}
 
 		.code-img {
-			transform: scale(2);
-			top: 70%;
-			right: 40%;
+			transform: scale(1.5);
+			top: 45%;
+			right: 35%;
 		}
 	}
 }
@@ -187,7 +193,8 @@
 		width: 94%;
 
 		.project-grid {
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			min-height: 50vh;
 		}
 	}
 
@@ -196,7 +203,8 @@
 		width: 90%;
 
 		.project-grid {
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			min-height: 50vh;
 		}
 	}
 }

@@ -6,3 +6,11 @@
 	box-sizing: border-box;
 	font-family: "Playfair Display", serif;
 }
+
+button {
+	transition: 250ms ease-in-out;
+}
+
+button:hover {
+	background-color: #eee;
+}
