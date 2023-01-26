@@ -3,7 +3,7 @@ import { AiFillPlusCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Developer from "../Developer/Developer.jsx";
-import me from "../../assets/me.jpg";
+import me from "../../../../assets/me.jpg";
 import "./enterprise.scss";
 
 const Enterprise = ({ onEnterpriseClick }) => {

@@ -3,11 +3,11 @@ import { AiFillPlusCircle, AiFillTags } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { DotLoader } from "react-spinners";
 import axios from "axios";
-import Tag from "../Tag/Tag.jsx";
-import Blog from "../Blog/Blog.jsx";
+import Tag from "../Tag/Tag";
+import Blog from "../Blog/Blog";
 import BlogPost from "../BlogPost/BlogPost.jsx";
-import githubProfile from "../../assets/githubprofile.jpg";
-import code from "../../assets/code.jpg";
+import githubProfile from "../../../../assets/githubprofile.jpg";
+import code from "../../../../assets/code.jpg";
 import "./developer.scss";
 
 const Developer = ({ onDevClick, onoroff }) => {
