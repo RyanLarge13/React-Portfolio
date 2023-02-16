@@ -1,3 +1,5 @@
+//--ignore-compile
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 * {
@@ -13,4 +15,79 @@ button {
 
 button:hover {
 	background-color: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		background-color: #101;
+		color: #fff;
+	}
+	header {
+		background-color: rgba(0, 0, 0, 0.4);
+		box-shadow: none;
+		border-radius: 0 0 1em 1em;
+	}
+	.download {
+		background-color: transparent;
+	}
+	.me {
+		box-shadow: none;
+	}
+	.major-heading {
+		color: #fff;
+	}
+	.info {
+		background-color: #101;
+		box-shadow: 0 0.1em 0.25em #571f4e;
+		p {
+			color: #fff;
+		}
+	}
+	.experience {
+		.bg-white {
+			background-color: #101;
+		}
+	}
+	.project {
+		box-shadow: 0 0.1em 0.25em 0 #571f4e !important;
+		h2 {
+			color: #fff !important;
+		}
+		a {
+			color: #fff !important;
+		}
+	}
+	.tag-list {
+		background-color: #101 !important;
+		box-shadow: 0 0.1em 0.25em 0 #571f4e;
+	}
+	.blog {
+		box-shadow: 0 0.1em 0.25em 0 #571f4e;
+	}
+	.indicator-dot {
+		background-color: #fff !important;
+	}
+	.blog-post-section {
+		background-color: #101;
+		.close {
+			background-color: #fff;
+		}
+	}
+	.contact {
+		background-color: #101;
+		box-shadow: none;
+		h1 {
+			color: #fff;
+		}
+		form {
+			background-color: #101;
+
+			input, textarea {
+				box-shadow: 0 0.1em 0.25em 0 #571f4e;
+			}
+		}
+	}
+	.social-heading {
+		color: #fff;
+	}
 }

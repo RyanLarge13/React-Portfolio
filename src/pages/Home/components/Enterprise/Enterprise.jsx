@@ -8,11 +8,11 @@ import "./enterprise.scss";
 
 const Enterprise = ({ onEnterpriseClick }) => {
   const [section, setSection] = useState(true);
-  
+
   useEffect(() => {
-  	window.scrollTo(0, 0)
-  })
-  
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       {section ? (
@@ -79,7 +79,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
               className="line-height"
             >
               My techstack knowledge began in June 2022 after enrolling in
@@ -92,7 +92,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
               className="line-height"
             >
               There is a multitude of reasons behind why I love this tech stack
@@ -118,7 +118,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
               className="line-height"
             >
               On a side note, I wanted to mention that in all honesty Next.js 13
@@ -147,7 +147,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               className="ml line-height"
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
             >
               My professional history and environment consists of E-commerce
               builds for local business, managing databases and creating
@@ -166,7 +166,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
             <motion.p
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              whileInView={{ opacity: 0.5 }}
+              whileInView={{ opacity: 1 }}
               className="bg-white ml line-height"
             >
               Personal work and hobbies builds mostly take up my time in the
@@ -190,7 +190,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               setSection(true);
             }}
           >
-            <AiFillPlusCircle className="plus-icon"/>
+            <AiFillPlusCircle className="plus-icon" />
             <p>Enterprise</p>
           </div>
         </>
