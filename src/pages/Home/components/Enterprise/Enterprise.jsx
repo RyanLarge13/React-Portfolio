@@ -167,7 +167,7 @@ const Enterprise = ({ onEnterpriseClick }) => {
               initial={{ opacity: 0 }}
               transition={{ duration: 1 }}
               whileInView={{ opacity: 1 }}
-              className="bg-white ml line-height"
+              className="bg-white ml line-height personal"
             >
               Personal work and hobbies builds mostly take up my time in the
               form of Web Development at the forefront, Mobile Development as a
